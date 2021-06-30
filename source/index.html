@@ -1,1 +1,112 @@
 <!DOCTYPE html>
+<html class="page" lang="ru">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bicycles</title>
+    <link rel="preload" href="fonts/opensanslight.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+
+  <body class="page__body">
+
+    <header class="page__header">
+
+      <h1 class="visually-hidden">Главная страница магазина велосипедов Moon</h1>
+      <div class="page__header-wrapper">
+        <div class="page__header-logo-wrapper">
+          <a class="page__header-logo" href="#">
+            <svg viewBox="0 0 68 21" width="68" height="21">
+              <use xlink:href="img/sprite_auto.svg#logo-moon"></use>
+            </svg>
+          </a>
+        </div>
+        <button class="page__header-toggle" type="button" name="button">
+          <svg width="30" height="30">
+            <use xlink:href="img/sprite_auto.svg#icon-burger"></use>
+          </svg>
+          <svg class="visually-hidden" width="30" height="30">
+            <use xlink:href="img/sprite_auto.svg#icon-close"></use>
+          </svg>
+          <span class="visually-hidden">Открыть или закрыть меню</span>
+        </button>
+        <nav class="main-nav">
+          <h2 class="visually-hidden">Главная навигация сайта</h2>
+          <ul class="main-nav__list">
+            <li class="main-nav__list-item">
+              <a class="main-nav__list-link" href="#about">О нас</a>
+            </li>
+            <li class="main-nav__list-item">
+              <a class="main-nav__list-link" href="#types">Виды велосипедов</a>
+            </li>
+            <li class="main-nav__list-item">
+              <a class="main-nav__list-link" href="#video">Видео про велосипеды</a>
+            </li>
+            <li class="main-nav__list-item">
+              <a class="main-nav__list-link" href="#contacts">Контакты</a>
+            </li>
+        </nav>
+        <div class="promo promo__wrapper">
+          <h2>Мы продаем велосипеды</h2>
+          <p>Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
+        </div>
+        <form class="form" action="index.html" method="post">
+            <fieldset>
+              <h3>Заполните поля ниже и мы подберем велосипед Вашей мечты</h3>
+              <ul class="form__list">
+                <li class="form__list-item">
+                  <label for="name"></label>
+                  <input type="text" id="name" name="name" placeholder="Введите Ваше Имя">
+                </li>
+                <li class="form__list-item">
+                  <label for="phone"></label>
+                  <input type="tel" id="phone" name="phone" placeholder="Введите Ваш номер телефона">
+                </li>
+              </ul>
+              <button type="button" name="button">Подобрать велосипед мечты</button>
+            </fieldset>
+        </form>
+      </div>
+
+
+    </header>
+
+    <main class="page__main">
+
+
+    </main>
+
+    <footer class="page__footer">
+
+      <div class="page__footer-wrapper">
+        <section class="contacts">
+          <h2>Как нас найти?</h2>
+          <p>Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
+          <section class="map">
+            <picture>
+              <source type="image/webp" media="(max-width: 768px)" srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 320px)" srcset="img/map-mobile@1x.webp 1x, img/map-mobile@2x.webp 2x">
+              <source type="image/webp" srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x">
+              <img src="img/map-desktop@1x.jpg" srcset="img/map-desktop@2x.jpg 2x" alt="Расположение магазина Moon">
+            </picture>
+          </section>
+          <ul class="contacts__list">
+            <li class="contacts__list-item">
+              <a class="contacts__list-link" href="mailto:puteshestviemechta@gmail.ru">puteshestviemechta@gmail.ru</a>
+            </li>
+            <li class="contacts__list-item">
+              <a class="contacts__list-link" href="tel:+749978468446">+7 (499)-784-684-46</a>
+            </li>
+          </ul>
+        </section>
+      </div>
+
+    </footer>
+
+  </body>
+
+</html>
