@@ -1,0 +1,31 @@
+.promo__wrapper {
+  margin-left: 19.444vw;
+  width: 393px;
+  @media (max-width: $tablet-width) {
+    text-align: center;
+    margin: 0 auto;
+    width: 50.929vw;
+  }
+}
+.promo h2 {
+  margin: 0;
+  margin-top: 40px;
+  color: $white;
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 64px;
+  @media (max-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 42px;
+  }
+}
+.promo p {
+  color: $white;
+  opacity: 0.7;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 32px;
+  @media (max-width: $tablet-width) {
+    font-size: 18px;
+  }
+}

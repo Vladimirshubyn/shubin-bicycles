@@ -1,0 +1,55 @@
+.form {
+  width: 327px;
+  margin-left: auto;
+  margin-bottom: 240px;
+  margin-right: 18.444vw;
+  text-align: center;
+}
+.form h3 {
+  width: 327px;
+  color: $white;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 28px;
+  margin: 0;
+  @media (max-width: $tablet-width) {
+    color: $black;
+    font-size: 18px;
+  }
+}
+.form fieldset {
+  padding: 0;
+  border: none;
+}
+.form ul {
+  margin: 0;
+  list-style: none;
+  padding-left: 0;
+}
+.form li {
+  margin-bottom: 20px;
+}
+.form input {
+  width: 100%;
+  padding-left: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: inherit;
+  color: $darker-grey;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  border-radius: 6px;
+}
+.form button {
+  width: 100%;
+  padding: 16px 48px 16px 48px;
+  font-family: inherit;
+  color: $black;
+  border: none;
+  border-radius: 6px;
+  background-color: $turquoise;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 21px;
+}

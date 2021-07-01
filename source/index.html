@@ -14,55 +14,50 @@
 
   <body class="page__body">
 
-    <header class="page__header">
+    <header class="page__header header">
 
       <h1 class="visually-hidden">Главная страница магазина велосипедов Moon</h1>
-      <div class="page__header-wrapper">
-        <div class="page__header-logo-wrapper">
-          <a class="page__header-logo" href="#">
+      <nav class="page__header-nav main-nav visually-hidden">
+        <h2 class="visually-hidden">Главная навигация сайта</h2>
+        <ul class="main-nav__list">
+          <li class="main-nav__list-item">
+            <a class="main-nav__list-link" href="#about">О нас</a>
+          </li>
+          <li class="main-nav__list-item">
+            <a class="main-nav__list-link" href="#types">Виды велосипедов</a>
+          </li>
+          <li class="main-nav__list-item">
+            <a class="main-nav__list-link" href="#video">Видео про велосипеды</a>
+          </li>
+          <li class="main-nav__list-item">
+            <a class="main-nav__list-link" href="#contacts">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="page__header-toggle header__toggle header__toggle--open" type="button" name="button">
+        <span class="visually-hidden">Открыть или закрыть меню</span>
+      </button>
+      <div class="page__header-wrapper header__wrapper">
+        <div class="page__header-logo-wrapper header__logo-wrapper">
+          <a class="header__logo" href="#">
             <svg viewBox="0 0 68 21" width="68" height="21">
               <use xlink:href="img/sprite_auto.svg#logo-moon"></use>
             </svg>
           </a>
         </div>
-        <button class="page__header-toggle" type="button" name="button">
-          <svg width="30" height="30">
-            <use xlink:href="img/sprite_auto.svg#icon-burger"></use>
-          </svg>
-          <svg class="visually-hidden" width="30" height="30">
-            <use xlink:href="img/sprite_auto.svg#icon-close"></use>
-          </svg>
-          <span class="visually-hidden">Открыть или закрыть меню</span>
-        </button>
-        <nav class="main-nav">
-          <h2 class="visually-hidden">Главная навигация сайта</h2>
-          <ul class="main-nav__list">
-            <li class="main-nav__list-item">
-              <a class="main-nav__list-link" href="#about">О нас</a>
-            </li>
-            <li class="main-nav__list-item">
-              <a class="main-nav__list-link" href="#types">Виды велосипедов</a>
-            </li>
-            <li class="main-nav__list-item">
-              <a class="main-nav__list-link" href="#video">Видео про велосипеды</a>
-            </li>
-            <li class="main-nav__list-item">
-              <a class="main-nav__list-link" href="#contacts">Контакты</a>
-            </li>
-        </nav>
-        <div class="promo promo__wrapper">
+        <div class="page__header-promo promo promo__wrapper">
           <h2>Мы продаем велосипеды</h2>
           <p>Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
         </div>
-        <form class="form" action="index.html" method="post">
+        <form class="page__header-form form" action="index.html" method="post">
             <fieldset>
               <h3>Заполните поля ниже и мы подберем велосипед Вашей мечты</h3>
-              <ul class="form__list">
-                <li class="form__list-item">
+              <ul>
+                <li>
                   <label for="name"></label>
                   <input type="text" id="name" name="name" placeholder="Введите Ваше Имя">
                 </li>
-                <li class="form__list-item">
+                <li>
                   <label for="phone"></label>
                   <input type="tel" id="phone" name="phone" placeholder="Введите Ваш номер телефона">
                 </li>
@@ -72,7 +67,6 @@
         </form>
       </div>
 
-
     </header>
 
     <main class="page__main">
@@ -80,13 +74,13 @@
 
     </main>
 
-    <footer class="page__footer">
+    <footer class="page__footer footer">
 
-      <div class="page__footer-wrapper">
+      <div class="footer__wrapper">
         <section class="contacts">
           <h2>Как нас найти?</h2>
           <p>Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
-          <section class="map">
+          <section class="contacts__map">
             <picture>
               <source type="image/webp" media="(max-width: 768px)" srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x">
               <source type="image/webp" media="(max-width: 320px)" srcset="img/map-mobile@1x.webp 1x, img/map-mobile@2x.webp 2x">
