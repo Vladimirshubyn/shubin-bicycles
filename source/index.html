@@ -17,7 +17,7 @@
     <header class="page__header header">
 
       <h1 class="visually-hidden">Главная страница магазина велосипедов Moon</h1>
-      <nav class="page__header-nav main-nav visually-hidden">
+      <nav class="page__header-nav main-nav">
         <h2 class="visually-hidden">Главная навигация сайта</h2>
         <ul class="main-nav__list">
           <li class="main-nav__list-item">
@@ -71,6 +71,70 @@
 
     <main class="page__main">
 
+      <section class="about">
+        <h3>Несколько фактов о нас</h3>
+        <ul class="about__list">
+          <li class="about__list-item">
+            <span>01</span>
+            <p>Самый широкий выбор велосипедов!</p>
+          </li>
+          <li class="about__list-item">
+            <span>02</span>
+            <p>Доставка велосипедов по всей России!</p>
+          </li>
+          <li class="about__list-item">
+            <span>03</span>
+            <p>Большой выбор крутых аксессуаров!</p>
+          </li>
+          <li class="about__list-item">
+            <span>04</span>
+            <p>Профессиональные консультации!</p>
+          </li>
+        </ul>
+      </section>
+      <section class="types">
+        <h3>Виды велосипедов</h3>
+        <ul class="types__list">
+          <li class="types__list-item">
+            <picture>
+              <source type="image/webp" media="(max-width: 320px)" srcset="img/content/road-bike-mobile@1x.webp 1x, img/content/road-bike-mobile@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 768px)" srcset="img/content/road-bike-tablet@1x.webp 1x, img/content/road-bike-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/content/road-bike-desktop@1x.webp 1x, img/content/road-bike-desktop@2x.webp 2x">
+              <img src="img/content/road-bike-desktop@1x.jpg" srcset="img/content/road-bike-desktop@2x.jpg 2x" alt="Фото велосипеда">
+            </picture>
+            <p>Дорожный велосипед</p>
+          </li>
+          <li class="types__list-item types__list-item--second">
+            <picture>
+              <source type="image/webp" media="(max-width: 320px)" srcset="img/content/mount-bike-mobile@1x.webp 1x, img/content/mount-bike-mobile@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 768px)" srcset="img/content/mount-bike-tablet@1x.webp 1x, img/content/mount-bike-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/content/mount-bike-desktop@1x.webp 1x, img/content/mount-bike-desktop@2x.webp 2x">
+              <img src="img/content/mount-bike-desktop@1x.jpg" srcset="img/content/mount-bike-desktop@2x.jpg 2x" alt="Фото велосипеда">
+            </picture>
+            <p>Горный велосипед</p>
+          </li>
+          <li class="types__list-item">
+            <picture>
+              <source type="image/webp" media="(max-width: 320px)" srcset="img/content/child-bike-mobile@1x.webp 1x, img/content/child-bike-mobile@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 768px)" srcset="img/content/child-bike-tablet@1x.webp 1x, img/content/child-bike-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/content/child-bike-desktop@1x.webp 1x, img/content/child-bike-desktop@2x.webp 2x">
+              <img src="img/content/child-bike-desktop@1x.jpg" srcset="img/content/child-bike-desktop@2x.jpg 2x" alt="Фото велосипеда">
+            </picture>
+            <p>Детский велосипед</p>
+          </li>
+        </ul>
+      </section>
+      <section class="video">
+        <h3>Видео про велосипеды</h3>
+        <p>В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
+        <picture>
+          <source type="image/webp" media="(max-width: 320px)" srcset="img/content/video-bike-mobile@1x.webp 1x, img/content/video-bike-mobile@2x.webp 2x">
+          <source type="image/webp" media="(max-width: 768px)" srcset="img/content/video-bike-tablet@1x.webp 1x, img/content/video-bike-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/content/video-bike-desktop@1x.webp 1x, img/content/video-bike-desktop@2x.webp 2x">
+          <img src="img/content/video-bike-desktop@1x.jpg" srcset="img/content/video-bike-desktop@2x.jpg 2x" alt="Видео про велосипеды">
+        </picture>
+        </video>
+      </section>
 
     </main>
 
