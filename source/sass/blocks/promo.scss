@@ -1,31 +1,47 @@
 .promo__wrapper {
   margin-left: 19.444vw;
-  width: 393px;
+  width: 27.292vw;
   @media (max-width: $tablet-width) {
     text-align: center;
     margin: 0 auto;
     width: 50.929vw;
   }
+  @media (max-width: $mobile-width) {
+    width: 288px;
+  }
 }
 .promo h2 {
   margin: 0;
-  margin-top: 40px;
+  margin-top: 50px;
   color: $white;
   font-weight: 700;
   font-size: 46px;
   line-height: 64px;
   @media (max-width: $tablet-width) {
+    margin: 0 auto;
+    padding-top: 85px;
+    width: 405px;
     font-size: 30px;
     line-height: 42px;
+  }
+  @media (max-width: $mobile-width) {
+    width: 288px;
+    padding-top: 70px;
   }
 }
 .promo p {
   color: $white;
+  margin-top: 25px;
   opacity: 0.7;
   font-weight: 300;
   font-size: 20px;
   line-height: 32px;
   @media (max-width: $tablet-width) {
+    margin-top: 20px;
+    margin-bottom: 0;
     font-size: 18px;
+  }
+  @media (max-width: $mobile-width) {
+    padding-bottom: 70px;
   }
 }
