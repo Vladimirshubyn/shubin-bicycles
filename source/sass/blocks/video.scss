@@ -1,0 +1,82 @@
+.video {
+  position: relative;
+  background-color: $back-black;
+  text-align: center;
+  margin-bottom: 245px;
+  @media (max-width: $tablet-width) {
+    margin-bottom: 155px;
+  }
+}
+.video h3 {
+  color: $white;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 30px;
+  padding-top: 120px;
+  margin-bottom: 20px;
+  @media (max-width: $tablet-width) {
+    font-size: 24px;
+    margin-top: 0;
+    padding-top: 65px;
+  }
+}
+.video p {
+  margin: 0 auto;
+  color: $white;
+  opacity: 0.7;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  width: 340px;
+  margin-bottom: 10px;
+  @media (max-width: $tablet-width) {
+    width: 429px;
+    margin-bottom: 0;
+  }
+  @media (max-width: $mobile-width) {
+    width: 288px;
+  }
+}
+.video img {
+  margin-top: 50px;
+  margin-bottom: -100px;
+  object-fit: cover;
+  @media (max-width: $tablet-width) {
+    margin-top: 40px;
+    margin-bottom: -90px;
+    width: 503px;
+    height: 282px;
+  }
+  @media (max-width: $mobile-width) {
+    width: 288px;
+    height: 162px;
+  }
+}
+.video__button {
+  z-index: 50;
+  position: absolute;
+  border: none;
+  background-color: transparent;
+  left: 47.306vw;
+  top: 72%;
+  @media (max-width: $tablet-width) {
+    left: 43.306vw;
+    top: 75%;
+  }
+  @media (max-width: $mobile-width) {
+    left: 40.306vw;
+    top: 95%;
+  }
+}
+.video__button svg {
+  width: 65px;
+  height: 65px;
+  @media (max-width: $tablet-width) {
+    width: 90px;
+    height: 90px;
+  }
+  @media (max-width: $mobile-width) {
+    width: 65px;
+    height: 65px;
+  }
+}

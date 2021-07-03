@@ -17,7 +17,7 @@
     <header class="page__header header">
 
       <h1 class="visually-hidden">Главная страница магазина велосипедов Moon</h1>
-      <nav class="page__header-nav main-nav">
+      <nav class="page__header-nav main-nav visually-hidden">
         <h2 class="visually-hidden">Главная навигация сайта</h2>
         <ul class="main-nav__list">
           <li class="main-nav__list-item">
@@ -95,10 +95,10 @@
       <section class="types">
         <h3>Виды велосипедов</h3>
         <ul class="types__list">
-          <li class="types__list-item">
+          <li class="types__list-item types__list-item--first">
             <picture>
-              <source type="image/webp" media="(max-width: 320px)" srcset="img/content/road-bike-mobile@1x.webp 1x, img/content/road-bike-mobile@2x.webp 2x">
-              <source type="image/webp" media="(max-width: 768px)" srcset="img/content/road-bike-tablet@1x.webp 1x, img/content/road-bike-tablet@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 767px)" srcset="img/content/road-bike-mobile@1x.webp 1x, img/content/road-bike-mobile@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 1023px)" srcset="img/content/road-bike-tablet@1x.webp 1x, img/content/road-bike-tablet@2x.webp 2x">
               <source type="image/webp" srcset="img/content/road-bike-desktop@1x.webp 1x, img/content/road-bike-desktop@2x.webp 2x">
               <img src="img/content/road-bike-desktop@1x.jpg" srcset="img/content/road-bike-desktop@2x.jpg 2x" alt="Фото велосипеда">
             </picture>
@@ -106,17 +106,17 @@
           </li>
           <li class="types__list-item types__list-item--second">
             <picture>
-              <source type="image/webp" media="(max-width: 320px)" srcset="img/content/mount-bike-mobile@1x.webp 1x, img/content/mount-bike-mobile@2x.webp 2x">
-              <source type="image/webp" media="(max-width: 768px)" srcset="img/content/mount-bike-tablet@1x.webp 1x, img/content/mount-bike-tablet@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 767px)" srcset="img/content/mount-bike-mobile@1x.webp 1x, img/content/mount-bike-mobile@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 1023px)" srcset="img/content/mount-bike-tablet@1x.webp 1x, img/content/mount-bike-tablet@2x.webp 2x">
               <source type="image/webp" srcset="img/content/mount-bike-desktop@1x.webp 1x, img/content/mount-bike-desktop@2x.webp 2x">
               <img src="img/content/mount-bike-desktop@1x.jpg" srcset="img/content/mount-bike-desktop@2x.jpg 2x" alt="Фото велосипеда">
             </picture>
             <p>Горный велосипед</p>
           </li>
-          <li class="types__list-item">
+          <li class="types__list-item types__list-item--third">
             <picture>
-              <source type="image/webp" media="(max-width: 320px)" srcset="img/content/child-bike-mobile@1x.webp 1x, img/content/child-bike-mobile@2x.webp 2x">
-              <source type="image/webp" media="(max-width: 768px)" srcset="img/content/child-bike-tablet@1x.webp 1x, img/content/child-bike-tablet@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 767px)" srcset="img/content/child-bike-mobile@1x.webp 1x, img/content/child-bike-mobile@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 1023px)" srcset="img/content/child-bike-tablet@1x.webp 1x, img/content/child-bike-tablet@2x.webp 2x">
               <source type="image/webp" srcset="img/content/child-bike-desktop@1x.webp 1x, img/content/child-bike-desktop@2x.webp 2x">
               <img src="img/content/child-bike-desktop@1x.jpg" srcset="img/content/child-bike-desktop@2x.jpg 2x" alt="Фото велосипеда">
             </picture>
@@ -128,12 +128,16 @@
         <h3>Видео про велосипеды</h3>
         <p>В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
         <picture>
-          <source type="image/webp" media="(max-width: 320px)" srcset="img/content/video-bike-mobile@1x.webp 1x, img/content/video-bike-mobile@2x.webp 2x">
-          <source type="image/webp" media="(max-width: 768px)" srcset="img/content/video-bike-tablet@1x.webp 1x, img/content/video-bike-tablet@2x.webp 2x">
+          <source type="image/webp" media="(max-width: 767px)" srcset="img/content/video-bike-mobile@1x.webp 1x, img/content/video-bike-mobile@2x.webp 2x">
+          <source type="image/webp" media="(max-width: 1023px)" srcset="img/content/video-bike-tablet@1x.webp 1x, img/content/video-bike-tablet@2x.webp 2x">
           <source type="image/webp" srcset="img/content/video-bike-desktop@1x.webp 1x, img/content/video-bike-desktop@2x.webp 2x">
           <img src="img/content/video-bike-desktop@1x.jpg" srcset="img/content/video-bike-desktop@2x.jpg 2x" alt="Видео про велосипеды">
         </picture>
-        </video>
+        <button class="video__button" type="button" name="button">
+          <svg viewBox="0 0 90 90" width="90" height="90">
+            <use xlink:href="img/sprite_auto.svg#button-play"></use>
+          </svg>
+        </button>
       </section>
 
     </main>
@@ -142,7 +146,7 @@
 
       <div class="page__footer-wrapper footer__wrapper">
         <section class="contacts">
-          <h2>Как нас найти?</h2>
+          <h3>Как нас найти?</h3>
           <p>Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
           <section class="contacts__map">
             <picture>
