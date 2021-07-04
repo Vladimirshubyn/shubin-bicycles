@@ -4,7 +4,6 @@
   background-color: $white;
 }
 .page__header {
-  background-color: $dark-grey;
   background-image: url("../img/bike-back-desktop@1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -22,10 +21,16 @@
   }
   @media (max-width: $mobile-width) {
     background-image: url("../img/bike-back-mobile@1x.jpg");
+    background-size: 100% 390px;
     background-position: top;
     @media (resolution: $retina) {
       background-image: url("../img/bike-back-mobile@2x.jpg");
     }
+  }
+}
+.page__header--menu-open {
+  @media (max-width: $tablet-width) {
+    background-position: 0 510px;
   }
 }
 .page__header-wrapper {

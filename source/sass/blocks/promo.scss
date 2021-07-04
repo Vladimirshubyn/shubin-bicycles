@@ -4,7 +4,7 @@
   @media (max-width: $tablet-width) {
     text-align: center;
     margin: 0 auto;
-    width: 50.929vw;
+    width: 89.589vw;
   }
   @media (max-width: $mobile-width) {
     width: 288px;
@@ -37,11 +37,14 @@
   font-size: 20px;
   line-height: 32px;
   @media (max-width: $tablet-width) {
+    width: 435px;
+    margin: 0 auto;
     margin-top: 20px;
     margin-bottom: 0;
     font-size: 18px;
   }
   @media (max-width: $mobile-width) {
+    width: 288px;
     padding-bottom: 70px;
   }
 }

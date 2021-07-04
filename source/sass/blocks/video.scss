@@ -6,6 +6,9 @@
   @media (max-width: $tablet-width) {
     margin-bottom: 155px;
   }
+  @media (max-width: $mobile-width) {
+    margin-bottom: 120px;
+  }
 }
 .video h3 {
   color: $white;
@@ -34,7 +37,7 @@
     margin-bottom: 0;
   }
   @media (max-width: $mobile-width) {
-    width: 288px;
+    width: 300px;
   }
 }
 .video img {
@@ -48,6 +51,8 @@
     height: 282px;
   }
   @media (max-width: $mobile-width) {
+    margin-top: 50px;
+    margin-bottom: -50px;
     width: 288px;
     height: 162px;
   }
@@ -64,8 +69,8 @@
     top: 75%;
   }
   @media (max-width: $mobile-width) {
-    left: 40.306vw;
-    top: 95%;
+    left: 38.306vw;
+    top: 93%;
   }
 }
 .video__button svg {

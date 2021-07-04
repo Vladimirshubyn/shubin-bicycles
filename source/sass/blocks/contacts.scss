@@ -24,7 +24,7 @@
     margin-bottom: 20px
   }
   @media (max-width: $mobile-width) {
-    width: 288px;
+    width: 250px;
   }
 }
 .contacts__list {
@@ -40,8 +40,14 @@
     margin-bottom: 28px;
   }
   @media (max-width: $mobile-width) {
+    margin-top: 20px;
     padding-left: 30px;
     flex-direction: column;
+  }
+}
+.contacts__list-item {
+  @media (max-width: $mobile-width) {
+    margin-bottom: 15px;
   }
 }
 .contacts__list-link {
@@ -69,12 +75,18 @@
   content: url("../img/icons/icon-mail.svg");
   right: 105%;
   top: 10%;
+  @media (max-width: $mobile-width) {
+    right: 103%;
+  }
 }
 .contacts__list-link--phone::before {
   position: absolute;
   content: url("../img/icons/icon-phone.svg");
   right: 105%;
   top: 10%;
+  @media (max-width: $mobile-width) {
+    right: 115%;
+  }
 }
 .contacts__map img {
   object-fit: cover;
