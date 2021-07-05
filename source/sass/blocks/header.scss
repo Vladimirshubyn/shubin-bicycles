@@ -1,12 +1,16 @@
+.header {
+  position: relative;
+}
 .header__logo-wrapper {
   margin-left: 19.444vw;
   @media (max-width: $tablet-width) {
     padding-top: 5px;
     margin-left: 21px;
-    margin-top: -65px;
+    margin-top: 20px;
   }
 }
 .header__toggle {
+  z-index: 1001;
   display: none;
   @media (max-width: $tablet-width) {
     display: block;

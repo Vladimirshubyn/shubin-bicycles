@@ -1,3 +1,6 @@
+.page {
+  scroll-behavior: smooth;
+}
 .page__body {
   margin: 0 auto;
   font-family: "Open Sans", "Arial", sans-serif;
@@ -12,8 +15,14 @@
     background-image: url("../img/bike-back-desktop@2x.jpg");
   }
   @media (max-width: $tablet-width) {
+    background-image: none;
+  }
+}
+.page__header-wrapper {
+  @media (max-width: $tablet-width) {
     background-image: url("../img/bike-back-tablet@1x.jpg");
     background-size: 100% 340px;
+    background-repeat: no-repeat;
     background-position: top;
     @media (resolution: $retina) {
       background-image: url("../img/bike-back-tablet@2x.jpg");

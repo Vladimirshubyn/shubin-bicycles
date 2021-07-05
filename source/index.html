@@ -8,7 +8,6 @@
     <link rel="preload" href="fonts/opensanslight.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
 
@@ -17,7 +16,8 @@
     <header class="page__header header">
 
       <h1 class="visually-hidden">Главная страница магазина велосипедов Moon</h1>
-      <nav class="page__header-nav main-nav visually-hidden">
+      <!-- main-nav--js скрывает меню при работающем js, main-nav--absolute выводит nav из потока, перекрывает html-->
+      <nav class="page__header-nav main-nav" id="nav">
         <h2 class="visually-hidden">Главная навигация сайта</h2>
         <ul class="main-nav__list">
           <li class="main-nav__list-item">
@@ -34,7 +34,8 @@
           </li>
         </ul>
       </nav>
-      <button class="page__header-toggle header__toggle header__toggle--open" type="button" name="button">
+      <!-- header__toggle--open меняет крестик на гамбургер при открытом меню -->
+      <button class="page__header-toggle header__toggle header__toggle--open visually-hidden" id="nav-toggle" type="button" name="button">
         <span class="visually-hidden">Открыть или закрыть меню</span>
       </button>
       <div class="page__header-wrapper header__wrapper">
@@ -49,7 +50,7 @@
           <h2>Мы продаем велосипеды</h2>
           <p>Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
         </div>
-        <form class="page__header-form form" action="index.html" method="post">
+        <form class="page__header-form form" id="form" action="https://echo.htmlacademy.ru/" method="post">
             <fieldset>
               <h3>Заполните поля ниже и мы подберем велосипед Вашей мечты</h3>
               <ul>
@@ -59,10 +60,10 @@
                 </li>
                 <li>
                   <label for="phone"></label>
-                  <input type="tel" id="phone" name="phone" placeholder="Введите Ваш номер телефона">
+                  <input class="phone" type="tel" id="phone" name="phone" placeholder="Введите Ваш номер телефона">
                 </li>
               </ul>
-              <button type="button" name="button">Подобрать велосипед мечты</button>
+              <button type="submit" id="form-submit">Подобрать велосипед мечты</button>
             </fieldset>
         </form>
       </div>
@@ -72,7 +73,7 @@
     <main class="page__main">
 
       <section class="about">
-        <h3>Несколько фактов о нас</h3>
+        <h3 id="about">Несколько фактов о нас</h3>
         <ul class="about__list">
           <li class="about__list-item">
             <span>01</span>
@@ -93,7 +94,7 @@
         </ul>
       </section>
       <section class="types">
-        <h3>Виды велосипедов</h3>
+        <h3 id="types">Виды велосипедов</h3>
         <ul class="types__list">
           <li class="types__list-item types__list-item--first">
             <picture>
@@ -125,7 +126,7 @@
         </ul>
       </section>
       <section class="video">
-        <h3>Видео про велосипеды</h3>
+        <h3 id="video">Видео про велосипеды</h3>
         <p>В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
         <picture>
           <source type="image/webp" media="(max-width: 767px)" srcset="img/content/video-bike-mobile@1x.webp 1x, img/content/video-bike-mobile@2x.webp 2x">
@@ -146,7 +147,7 @@
 
       <div class="page__footer-wrapper footer__wrapper">
         <section class="contacts">
-          <h3>Как нас найти?</h3>
+          <h3 id="contacts">Как нас найти?</h3>
           <p>Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
           <section class="contacts__map">
             <picture>
@@ -168,6 +169,8 @@
       </div>
 
     </footer>
+
+    <script src="js/script.js"></script>
 
   </body>
 
