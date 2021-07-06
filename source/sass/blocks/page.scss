@@ -1,12 +1,14 @@
 .page {
-  scroll-behavior: smooth;
-}
-.page__body {
   margin: 0 auto;
   font-family: "Open Sans", "Arial", sans-serif;
   background-color: $white;
 }
+.page--menu-open {
+  overflow-y: hidden;
+}
 .page__header {
+  margin: 0 auto;
+  background-color: $dark-grey;
   background-image: url("../img/bike-back-desktop@1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -15,11 +17,16 @@
     background-image: url("../img/bike-back-desktop@2x.jpg");
   }
   @media (max-width: $tablet-width) {
+    background-color: transparent;
     background-image: none;
   }
 }
 .page__header-wrapper {
+  margin: 0 auto;
+  width: 880px;
   @media (max-width: $tablet-width) {
+    width: 100%;
+    background-color: $dark-grey;
     background-image: url("../img/bike-back-tablet@1x.jpg");
     background-size: 100% 340px;
     background-repeat: no-repeat;

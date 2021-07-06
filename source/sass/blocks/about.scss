@@ -1,7 +1,13 @@
 .about {
+  margin: 0 auto;
+  width: 1165px;
   text-align: center;
   margin-bottom: 130px;
+  @media (max-width: 1166px) {
+    width: 100%;
+  }
   @media (max-width: $tablet-width) {
+    margin: 0 auto;
     margin-bottom: 20px;
   }
   @media (max-width: $mobile-width) {
@@ -24,19 +30,18 @@
 }
 .about__list {
   list-style: none;
-  padding-left: 107px;
-  padding-right: 107px;
+  padding-left: 0;
   text-align: center;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
   @media (max-width: $tablet-width) {
-    padding-left: 80px;
-    padding-right: 80px;
+    padding-left: 106px;
+    padding-right: 106px;
   }
   @media (max-width: $mobile-width) {
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
 .about__list-item {
