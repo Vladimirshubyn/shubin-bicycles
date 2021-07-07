@@ -27,14 +27,17 @@ const formSubmit = (evt) => {
 
 const validateInput = (evt) => {
   const array = phoneInput.value.split(' ');
+  const lettersPattern = /[0-9]/i;
   phoneInput.setCustomValidity('');
 
-  if (phoneInput.value = '/[^\d]/g/') {
+  if (lettersPattern.test(phoneInput.value) == true) {
+    return true;
+  }
+  else {
     evt.target.setCustomValidity('Нужно вводить только цифры');
-    return;
   }
 }
 
 navToggle.addEventListener('click', toggleNav);
-form.addEventListener('submit', formSubmit);
 submitButton.addEventListener('click', validateInput);
+form.addEventListener('submit', formSubmit);
