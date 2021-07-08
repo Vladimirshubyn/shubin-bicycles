@@ -21,23 +21,23 @@ const toggleNav = () => {
   page.classList.toggle('page--menu-open');
 }
 
-const formSubmit = (evt) => {
-  evt.preventDefault();
-}
 
-const validateInput = (evt) => {
-  const array = phoneInput.value.split(' ');
-  const lettersPattern = /[0-9]/i;
-  phoneInput.setCustomValidity('');
+const validateInput = () => {
+  let lettersPattern = /[0-9]/;
 
-  if (lettersPattern.test(phoneInput.value) == true) {
-    return true;
+  if (phoneInput.value.match(lettersPattern)) {
+    return true
   }
   else {
-    evt.target.setCustomValidity('Нужно вводить только цифры');
+    alert("Нужно вводить только цифры");
+    return false;
   }
+}
+
+const formSubmit = (evt) => {
+  evt.preventDefault();
+  validateInput()
 }
 
 navToggle.addEventListener('click', toggleNav);
-submitButton.addEventListener('click', validateInput);
 form.addEventListener('submit', formSubmit);
