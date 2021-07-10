@@ -3,13 +3,16 @@
   font-weight: 600;
   font-size: 30px;
   line-height: 30px;
+
   @media (max-width: $tablet-width) {
     font-size: 24px;
   }
+
   @media (max-width: $mobile-width) {
     font-size: 18px;
   }
 }
+
 .contacts p {
   color: $black;
   opacity: 0.7;
@@ -19,14 +22,17 @@
   font-size: 17px;
   line-height: 31px;
   margin-bottom: 40px;
+
   @media (max-width: $tablet-width) {
-    width: 81.901vw;
-    margin-bottom: 20px
+    width: 81.9vw;
+    margin-bottom: 20px;
   }
+
   @media (max-width: $mobile-width) {
     width: 250px;
   }
 }
+
 .contacts__list {
   list-style: none;
   padding-left: 0;
@@ -34,22 +40,26 @@
   justify-content: center;
   margin-top: 35px;
   margin-bottom: 98px;
+
   @media (max-width: $tablet-width) {
     padding-left: 20px;
     margin-top: 15px;
     margin-bottom: 28px;
   }
+
   @media (max-width: $mobile-width) {
     margin-top: 20px;
     padding-left: 30px;
     flex-direction: column;
   }
 }
+
 .contacts__list-item {
   @media (max-width: $mobile-width) {
     margin-bottom: 15px;
   }
 }
+
 .contacts__list-link {
   position: relative;
   color: $black;
@@ -57,43 +67,54 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
+
   @media (max-width: $mobile-width) {
     line-height: 32px;
   }
 }
+
 .contacts__list-link--email {
   margin-right: 127px;
+
   @media (max-width: $tablet-width) {
     margin-right: 127px;
   }
+
   @media (max-width: $mobile-width) {
     margin-right: 0;
   }
 }
+
 .contacts__list-link--email::before {
   position: absolute;
   content: url("../img/icons/icon-mail.svg");
   right: 105%;
   top: 10%;
+
   @media (max-width: $mobile-width) {
     right: 103%;
   }
 }
+
 .contacts__list-link--phone::before {
   position: absolute;
   content: url("../img/icons/icon-phone.svg");
   right: 105%;
   top: 10%;
+
   @media (max-width: $mobile-width) {
     right: 115%;
   }
 }
+
 .contacts__map img {
   object-fit: cover;
+
   @media (max-width: $tablet-width) {
     width: 698px;
     height: 545px;
   }
+
   @media (max-width: $mobile-width) {
     width: 320px;
     height: 250px;

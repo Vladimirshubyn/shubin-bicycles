@@ -1,14 +1,17 @@
 .promo {
   width: 393px;
+
   @media (max-width: $tablet-width) {
     text-align: center;
     margin: 0 auto;
-    width: 89.589vw;
+    width: 89.59vw;
   }
+
   @media (max-width: $mobile-width) {
     width: 288px;
   }
 }
+
 .promo h2 {
   margin: 0;
   margin-top: 50px;
@@ -16,6 +19,7 @@
   font-weight: 700;
   font-size: 46px;
   line-height: 64px;
+
   @media (max-width: $tablet-width) {
     margin: 0 auto;
     padding-top: 85px;
@@ -23,11 +27,13 @@
     font-size: 30px;
     line-height: 42px;
   }
+
   @media (max-width: $mobile-width) {
     width: 288px;
     padding-top: 70px;
   }
 }
+
 .promo p {
   color: $white;
   margin-top: 25px;
@@ -35,6 +41,7 @@
   font-weight: 300;
   font-size: 20px;
   line-height: 32px;
+
   @media (max-width: $tablet-width) {
     width: 435px;
     margin: 0 auto;
@@ -42,6 +49,7 @@
     margin-bottom: 0;
     font-size: 18px;
   }
+
   @media (max-width: $mobile-width) {
     width: 288px;
     padding-bottom: 70px;

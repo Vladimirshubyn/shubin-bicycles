@@ -1,16 +1,22 @@
 body {
   margin: 0;
 }
+
 img {
   max-width: 100%;
 }
+
 a {
   text-decoration: none;
 }
+
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
-*, *::before, *::after {
+
+*,
+*::before,
+*::after {
   box-sizing: inherit;
 }

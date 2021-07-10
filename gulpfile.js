@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 var gulp = require("gulp");
 var plumber = require("gulp-plumber");
@@ -63,7 +63,7 @@ gulp.task("images", function() {
 gulp.task("webp", function () {
   return gulp.src("source/img/**/*.{png,jpg}")
     .pipe(webp({quality: 90}))
-    .pipe(gulp.dest("build/img"));
+    .pipe(gulp.dest("source/img"));
 });
 
 gulp.task("sprite", function () {
