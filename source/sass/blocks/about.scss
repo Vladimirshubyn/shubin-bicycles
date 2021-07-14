@@ -35,14 +35,17 @@
 }
 
 .about__list {
+  width: 100%;
   list-style: none;
   padding-left: 0;
   text-align: center;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: space-between;
 
   @media (max-width: $tablet-width) {
+    flex-wrap: wrap;
+    width: 100%;
     padding-left: 106px;
     padding-right: 106px;
   }
