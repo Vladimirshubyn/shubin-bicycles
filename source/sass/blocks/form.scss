@@ -8,8 +8,8 @@
     margin: 0 auto;
     margin-top: 80px;
     padding-top: 50px;
-    padding-left: 224px;
-    padding-right: 224px;
+    padding-left: 220px;
+    padding-right: 220px;
     background-color: $white;
   }
 
@@ -25,18 +25,18 @@
   width: 340px;
   color: $white;
   font-weight: 600;
-  font-size: 17px;
+  font-size: 15px;
   line-height: 28px;
   margin: 0;
   margin-bottom: 23px;
 
   @media (max-width: $tablet-width) {
-    width: 337px;
+    width: 100%;
     margin: 0 auto;
     margin-top: 20px;
     margin-bottom: 30px;
     color: $black;
-    font-size: 18px;
+    font-size: 17px;
   }
 
   @media (max-width: $mobile-width) {
@@ -63,7 +63,7 @@
 
 .form input {
   width: 100%;
-  padding-left: 30px;
+  padding-left: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
   font-family: inherit;
@@ -90,4 +90,10 @@
   @media (max-width: $mobile-width) {
     padding: 16px 28px 16px 28px;
   }
+}
+
+.form button:hover {
+  box-shadow: inset 0px 0px 0px 1px $turquoise;
+  color: $turquoise;
+  background-color: $menu-text-grey;
 }

@@ -32,7 +32,7 @@
       </button>
       <div class="page__header-wrapper header__wrapper">
         <div class="page__header-logo-wrapper header__logo-wrapper">
-          <a class="header__logo" href="#">
+          <a class="header__logo">
             <span class="visually-hidden">Логотип Moon</span>
             <svg viewBox="0 0 68 21" width="68" height="21">
               <use xlink:href="img/sprite_auto.svg#logo-moon"></use>
@@ -95,7 +95,7 @@
               <source type="image/webp" media="(max-width: 1023px)" srcset="img/content/road-bike-tablet@1x.webp 1x, img/content/road-bike-tablet@2x.webp 2x">
               <source type="image/webp" srcset="img/content/road-bike-desktop@1x.webp 1x, img/content/road-bike-desktop@2x.webp 2x">
               <!-- d: 1x: 342px, 2x: 684px: t: 1x: 270px, 2x: 540px; -->
-              <img src="img/content/road-bike-desktop@1x.jpg" srcset="img/content/road-bike-desktop@2x.jpg 2x" alt="Фото велосипеда" width="342" height="503">
+              <img src="img/content/road-bike-desktop@1x.jpg" srcset="img/content/road-bike-desktop@2x.jpg 2x" alt="Фото велосипеда" width="342" height="508">
             </picture>
             <p>Дорожный велосипед</p>
           </li>
@@ -124,19 +124,21 @@
       <section class="video">
         <h3 id="video">Видео про велосипеды</h3>
         <p>В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
-        <picture>
-          <source type="image/webp" media="(max-width: 767px)" srcset="img/content/video-bike-mobile@1x.webp 1x, img/content/video-bike-mobile@2x.webp 2x">
-          <source type="image/webp" media="(max-width: 1023px)" srcset="img/content/video-bike-tablet@1x.webp 1x, img/content/video-bike-tablet@2x.webp 2x">
-          <source type="image/webp" srcset="img/content/video-bike-desktop@1x.webp 1x, img/content/video-bike-desktop@2x.webp 2x">
-          <!-- d: 1x: 929px, 2x: 1858px: t: 1x: 503px, 2x: 1006px; m: 1x: 288px, 2x: 576px -->
-          <img src="img/content/video-bike-desktop@1x.jpg" srcset="img/content/video-bike-desktop@2x.jpg 2x" alt="Видео про велосипеды" width="929" height="522">
-        </picture>
-        <button class="video__button" type="button" name="button">
-          <svg viewBox="0 0 90 90" width="90" height="90">
-            <use xlink:href="img/sprite_auto.svg#button-play"></use>
-          </svg>
-          <span class="visually-hidden">Просмотр видео</span>
-        </button>
+        <div class="video__wrapper">
+          <picture>
+            <source type="image/webp" media="(max-width: 767px)" srcset="img/content/video-bike-mobile@1x.webp 1x, img/content/video-bike-mobile@2x.webp 2x">
+            <source type="image/webp" media="(max-width: 1023px)" srcset="img/content/video-bike-tablet@1x.webp 1x, img/content/video-bike-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/content/video-bike-desktop@1x.webp 1x, img/content/video-bike-desktop@2x.webp 2x">
+            <!-- d: 1x: 929px, 2x: 1858px: t: 1x: 503px, 2x: 1006px; m: 1x: 288px, 2x: 576px -->
+            <img src="img/content/video-bike-desktop@1x.jpg" srcset="img/content/video-bike-desktop@2x.jpg 2x" alt="Видео про велосипеды" width="929" height="522">
+          </picture>
+          <button class="video__button" type="button" name="button">
+            <svg viewBox="0 0 93 93" width="90" height="90">
+              <use xlink:href="img/sprite_auto.svg#button-play"></use>
+            </svg>
+            <span class="visually-hidden">Просмотр видео</span>
+          </button>
+        </div>
       </section>
 
     </main>

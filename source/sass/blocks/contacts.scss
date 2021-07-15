@@ -34,12 +34,14 @@
 }
 
 .contacts__list {
+  width: 625px;
   list-style: none;
-  padding-left: 0;
-  display: flex;
-  justify-content: center;
+  margin: 0 auto;
   margin-top: 35px;
   margin-bottom: 98px;
+  padding-left: 0;
+  display: flex;
+  justify-content: space-around;
 
   @media (max-width: $tablet-width) {
     padding-left: 20px;
@@ -48,6 +50,7 @@
   }
 
   @media (max-width: $mobile-width) {
+    width: 100%;
     margin-top: 20px;
     padding-left: 30px;
     flex-direction: column;
@@ -73,17 +76,21 @@
   }
 }
 
-.contacts__list-link--email {
-  margin-right: 127px;
-
-  @media (max-width: $tablet-width) {
-    margin-right: 127px;
-  }
-
-  @media (max-width: $mobile-width) {
-    margin-right: 0;
-  }
+.contacts__list-link:hover {
+  opacity: 1;
 }
+
+// .contacts__list-link--email {
+//   margin-right: 127px;
+//
+//   @media (max-width: $tablet-width) {
+//     margin-right: 127px;
+//   }
+//
+//   @media (max-width: $mobile-width) {
+//     margin-right: 0;
+//   }
+// }
 
 .contacts__list-link--email::before {
   position: absolute;

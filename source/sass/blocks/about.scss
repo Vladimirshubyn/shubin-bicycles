@@ -51,6 +51,7 @@
   }
 
   @media (max-width: $mobile-width) {
+    justify-content: center;
     padding-left: 16px;
     padding-right: 16px;
   }
@@ -60,6 +61,7 @@
   width: 263px;
 
   @media (max-width: $tablet-width) {
+    width: 263px;
     margin-bottom: 20px;
   }
 
