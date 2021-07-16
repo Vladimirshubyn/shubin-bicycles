@@ -1,6 +1,5 @@
 .about {
   margin: 0 auto;
-  width: 1165px;
   text-align: center;
   margin-bottom: 130px;
 
@@ -40,8 +39,13 @@
   padding-left: 0;
   text-align: center;
   display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+
+  @media (max-width: 1173px) {
+    gap: 0;
+  }
 
   @media (max-width: $tablet-width) {
     flex-wrap: wrap;
@@ -86,8 +90,8 @@
   margin-top: 15px;
 
   @media (max-width: $mobile-width) {
+    font-size: 18px;
     margin-top: 10px;
     margin-bottom: 0;
-    font-size: 18px;
   }
 }

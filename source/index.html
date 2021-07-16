@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="css/style.min.css">
   </head>
 
-  <!-- page--menu-open отключает прокрутку при открытом меню -->
   <body class="page">
 
     <header class="page__header header">
@@ -26,7 +25,7 @@
           <a class="main-nav__list-link" href="#contacts">Контакты</a>
         </div>
       </nav>
-      <!-- header__toggle--open меняет крестик на гамбургер при открытом меню -->
+      <!-- header__toggle--absolute закрепляет кнопку при открытом меню, header__toggle--open меняет крестик на гамбургер при открытом меню -->
       <button class="page__header-toggle header__toggle header__toggle--open visually-hidden" id="nav-toggle" type="button" name="button">
         <span class="visually-hidden">Открыть или закрыть меню</span>
       </button>
@@ -45,7 +44,7 @@
         </div>
         <form class="page__header-form form" id="form" action="https://echo.htmlacademy.ru/" method="post">
             <fieldset>
-              <h3>Заполните поля ниже и мы подберем велосипед Вашей мечты</h3>
+              <p>Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
               <ul>
                 <li>
                   <label for="name"><span class="visually-hidden">Ввод имени</span></label>

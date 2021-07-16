@@ -1,14 +1,14 @@
 .video {
   background-color: $back-black;
   text-align: center;
-  margin-bottom: 245px;
+  margin-bottom: 215px;
 
   @media (max-width: $tablet-width) {
-    margin-bottom: 155px;
+    margin-bottom: 130px;
   }
 
   @media (max-width: $mobile-width) {
-    margin-bottom: 120px;
+    margin-bottom: 100px;
   }
 }
 
@@ -17,6 +17,7 @@
   font-weight: 600;
   font-size: 30px;
   line-height: 30px;
+  margin-top: 0;
   padding-top: 120px;
   margin-bottom: 20px;
 
@@ -110,6 +111,7 @@
     height: 65px;
   }
 }
+
 .video__button svg:hover {
   stroke: $white;
   stroke-width: 3%;

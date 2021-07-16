@@ -26,6 +26,14 @@
   }
 }
 
+.header__toggle--absolute {
+  @media (max-width: $tablet-width) {
+    z-index: 1001;
+    position: fixed;
+    background-color: $white;
+  }
+}
+
 .header__toggle::before {
   @media (max-width: $tablet-width) {
     position: absolute;

@@ -3,7 +3,6 @@
 (function init() {
   var nav = document.querySelector('#nav');
   var navToggle = document.querySelector('#nav-toggle');
-  var page = document.querySelector('.page');
   var phoneInput = document.querySelector('input[name="phone"]');
   var submitButton = document.querySelector('#form-submit');
 
@@ -18,7 +17,7 @@
     nav.classList.toggle('main-nav--js');
     nav.classList.toggle('main-nav--absolute');
     navToggle.classList.toggle('header__toggle--open');
-    page.classList.toggle('page--menu-open');
+    navToggle.classList.toggle('header__toggle--absolute');
   };
 
   var validateInput = function () {

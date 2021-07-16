@@ -3,18 +3,12 @@
   margin: 0 auto;
   font-family: "Open Sans", "Arial", sans-serif;
   background-color: $white;
-  min-height: 100%;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
 
-.page--menu-open {
-  overflow-y: hidden;
-}
-
 .page__header {
-  // margin: 0 auto;
   background-color: $dark-grey;
   background-image: url("../img/bike-back-desktop@1x.jpg");
   background-repeat: no-repeat;
