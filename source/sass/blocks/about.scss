@@ -34,12 +34,13 @@
 }
 
 .about__list {
-  width: 100%;
+  width: 100vw;
   list-style: none;
+  margin: 0 auto;
   padding-left: 0;
   text-align: center;
-  display: flex;
   flex-wrap: wrap;
+  display: flex;
   justify-content: center;
   gap: 40px;
 
@@ -50,8 +51,8 @@
   @media (max-width: $tablet-width) {
     flex-wrap: wrap;
     width: 100%;
-    padding-left: 106px;
-    padding-right: 106px;
+    padding-left: 116px;
+    padding-right: 116px;
   }
 
   @media (max-width: $mobile-width) {
@@ -63,6 +64,10 @@
 
 .about__list-item {
   width: 263px;
+
+  @media (max-width: 1152px) {
+    width: 18.26vw;
+  }
 
   @media (max-width: $tablet-width) {
     width: 263px;
@@ -90,6 +95,7 @@
   margin-top: 15px;
 
   @media (max-width: $mobile-width) {
+    width: 100%;
     font-size: 18px;
     margin-top: 10px;
     margin-bottom: 0;
