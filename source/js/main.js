@@ -23,10 +23,10 @@
   var validateInput = function () {
     var lettersPattern = /[0-9]/;
 
-    if (!phoneInput.value.match(lettersPattern)) {
-      phoneInput.setCustomValidity('Нужно вводить только цифры');
-    } else {
+    if (phoneInput.value.match(lettersPattern)) {
       phoneInput.setCustomValidity('');
+    } else {
+      phoneInput.setCustomValidity('Нужно вводить только цифры');
     }
   };
 

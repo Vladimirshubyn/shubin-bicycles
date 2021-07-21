@@ -18,9 +18,11 @@
 
 .main-nav--absolute {
   @media (max-width: $tablet-width) {
+    flex: 1;
     height: 100%;
     z-index: 1000;
-    position: absolute;
+    position: fixed;
+    overflow: auto;
   }
 }
 
@@ -28,8 +30,8 @@
   width: 880px;
   display: flex;
   justify-content: center;
+  min-height: min-content;
   flex-wrap: wrap;
-  gap: 135px;
   margin: 0 auto;
   padding-top: 20px;
   padding-bottom: 10px;
@@ -47,7 +49,7 @@
     margin-top: 80px;
     padding-left: 0;
     padding-right: 0;
-    padding-bottom: 4000px;
+    // padding-bottom: 4000px;
     flex-direction: column;
     color: $menu-text-grey;
     font-weight: 400;
@@ -61,12 +63,14 @@
   font-weight: 300;
   font-size: 16px;
   line-height: 32px;
+  margin-left: 16%;
 
   @media (max-width: $tablet-width) {
     background-color: $menu-grey;
     margin-bottom: 30px;
     display: block;
     position: relative;
+    margin-left: 0;
     padding-left: 16px;
     padding-top: 17px;
     padding-bottom: 17px;
@@ -75,6 +79,10 @@
     font-size: 20px;
     line-height: 28px;
   }
+}
+
+.main-nav__list-link--first {
+  margin-left: 0;
 }
 
 .main-nav__list-link:hover {
